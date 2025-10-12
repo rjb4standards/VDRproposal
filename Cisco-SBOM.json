@@ -1,0 +1,51 @@
+{
+	"SPDXID": "SPDXRef-DOCUMENT",
+	"spdxVersion": "SPDX-2.2",
+	"creationInfo": {
+		"created": "2025-10-12T13:25:52Z",
+		"creators": [
+			"Organization:dns:businesscyberguardian.com",
+			"Tool:SAG-PM Version 2.1.5"
+		]
+	},
+	"name": "Cisco ASA 5500-X Series Firewalls Software, Version 9.16.4",
+	"dataLicense": "CC0-1.0",
+	"hasExtractedLicensingInfos": [
+		{
+			"licenseId": "LicenseRef-NOASSERTION",
+			"extractedText": "WARNING: TEXT IS REQUIRED",
+			"checksums": [
+				{
+					"algorithm": "SHA256",
+					"checksumValue": "652bf45561ddd727fba2e13c817a53a5da3714339863934e15fabefeb0f6a827"
+				}
+			],
+			"name": "NOASSERTION"
+		}
+	],
+	"documentNamespace": "dns:softwareassuranceguardian.com",
+	"packages": [
+		{
+			"SPDXID": "SPDXRef-94dca0af-ad76-4dee-bd18-5e0d523010b5",
+			"copyrightText": "NOASSERTION",
+			"downloadLocation": "NOASSERTION",
+			"filesAnalyzed": true,
+			"licenseConcluded": "NOASSERTION",
+			"licenseDeclared": "NOASSERTION",
+			"licenseInfoFromFiles": [
+				"LicenseRef-NOASSERTION"
+			],
+			"name": "Cisco ASA 5500-X Series Firewalls Software",
+			"supplier": "Organization:Cisco Systems Inc.",
+			"versionInfo": "9.16.4"
+		}
+	],
+	"files": [],
+	"relationships": [
+		{
+			"spdxElementId": "SPDXRef-DOCUMENT",
+			"relatedSpdxElement": "SPDXRef-94dca0af-ad76-4dee-bd18-5e0d523010b5",
+			"relationshipType": "DESCRIBES"
+		}
+	]
+}

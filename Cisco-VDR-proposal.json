@@ -1,0 +1,28 @@
+{
+    "SBOMVulnerabilityDisclosure": {
+        "CVERespository": "NIST_NVD",
+        "NISTNVDSearchStatus": "Success",
+        "UnresolvedVulnerabilities": "U",
+        "PackageSourceLocation": "NOASSERTION",
+        "ProductName": "Cisco ASA 5500-X Series Firewalls Software",
+        "ProductVersion": "9.16.4",
+        "SBOMAuthor": "['Organization:dns:businesscyberguardian.com', 'Tool:SAG-PM Version 2.1.5']",
+        "SBOMFormat": "spdx",
+        "SBOMFormatSyntax": "JSON",
+        "SBOMLocation": "file:///C:\\Users\\dick\\Cisco-SBOM.json",
+        "SBOMTimestamp": "2025-10-12T13:25:52Z",
+        "SBOMTotalComponentCount": "1",
+        "SupplierName": "Organization:Cisco Systems Inc.",
+        "VulnDisclosureCreateDate": "2025-10-12T13:51:33.290749+00:00"
+    },
+    "Components": [
+        {
+            "CVESearchString": "https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=Cisco+ASA+5500-X+Series+Firewalls+Software+9.16.4",
+            "ComponentID": "",
+            "ComponentName": "Cisco ASA 5500-X Series Firewalls Software",
+            "ComponentSupplierName": "Organization:Cisco Systems Inc.",
+            "ComponentVersion": "9.16.4",
+            "NumberVulnsReported": "0"
+        }
+    ]
+}
