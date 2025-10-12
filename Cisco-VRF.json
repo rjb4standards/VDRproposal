@@ -1,0 +1,49 @@
+{
+	"VendorResponse": {
+		"VendorLegalName": "Cisco Systems Inc.",
+		"SupplierID": "dns:cisco.com",
+		"StreetAddress": "3098 Olsen Drive",
+		"City": "San Jose",
+		"StateOrProvince": "California",
+		"ZipCode": "95128",
+		"Country": "USA",
+		"WebsiteURL": "https://https://www.cisco.com/",
+		"ContactTelephone": "408-526-4000",
+		"ContactEmail": "tac@cisco.com ",
+		"ContactPerson": "Cisco Technical Assistance Center",
+		"DUNSNumber": "153804570",
+		"NAESBEIRID": "",
+		"CyberSecPolicyURL": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000858877/ce3a3509-0603-4a14-a290-41f8feb92ade.pdf",
+		"FinancialDataURL": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000858877/6c821d1a-cf4e-4310-9801-df9399aa701b.pdf",
+		"CompanyDataURL": "https://newsroom.cisco.com/c/r/newsroom/en/us/interactive/celebrating-40-years-of-innovation.html",
+		"Products": [
+			{
+				"LicensorName": "Cisco Systems Inc.",
+				"ProductName": "Cisco ASA 5500-X Series Firewalls Software",
+				"DescriptionURL": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-4200-ds.html",
+				"Version": "9.16.4",
+				"SBOM": {
+					"type": "spdx",
+					"version": "2.2",
+					"format": "JSON",
+					"DigitalSignatureURL": "",
+					"URL": "https://raw.githubusercontent.com/rjb4standards/VDRproposal/refs/heads/main/Cisco-SBOM.json"
+				},
+				"SourceLocationURL": "https://software.cisco.com/download/home/268438162",
+				"DigitallySigned": "Y",
+				"UnsolvedVulnerabilities": "N",
+				"KnownVulnInfoURL": {
+					"DocFormat": "JSON",
+					"DigitalSignatureURL": "",
+					"URL": "https://raw.githubusercontent.com/rjb4standards/VDRproposal/refs/heads/main/Cisco-VDR-proposal.json"
+				},
+				"SDLCPolicyURL": "https://softwareassuranceguardian.com/SDLC-POLICY-BCG.pdf",
+				"SDLCEvidenceDataURL": "https://softwareassuranceguardian.com/SAG-SPREADSHEET-SAG-PM-V2_1_4.xls",
+				"CyberSecLabelURL": "https://softwareassuranceguardian.com/SAGCTR_inquiry/getTrustedProductLabel?ProductID=SHA256HASHOFINPUTFILE&html=1",
+				"CommercialStatus": "Available",
+				"SupportStatus": "Supported",
+				"LastModifiedDateTimeUTC": "2025-10-12T17:38:00"
+			}
+		]
+	}
+}
