@@ -1,0 +1,45 @@
+ID,Severity,Title,Product,Applicable Versions,Affected,Unaffacted,Date published,Date updated,CVSS Base Score,CVSS Base and Threat Score,Attack Vector,Attack Complexity," ""Attack Requirements""","Privileges Required"""," ""User Interaction"""," ""Scope"""," ""Confidentiality Impact"""," ""Integrity Impact"""," ""AvailabilityImpact""",Problem,Solution,Workaround,URL
+PAN-SA-2025-0001,HIGH,Expedition: Multiple Vulnerabilities in Expedition Migration Tool Lead to Exposure of Firewall Credentials,"Cloud NGFW,Expedition,Panorama,PAN-OS,Prisma Access","Cloud NGFW
+Expedition 1
+Panorama
+PAN-OS
+Prisma Access","None
+< 1.2.101
+None
+None
+None","All
+>= 1.2.101
+All
+All
+All",1/8/2025,2025-01-15T00:30:00.000Z,9.2,7.8,NETWORK,LOW,,NONE,NONE,,product:HIGH subsequent:HIGH,product:LOW subsequent:NONE,product:NONE subsequent:NONE,"Multiple vulnerabilities in the Palo Alto Networks Expedition migration tool enable an attacker to read Expedition database contents and arbitrary files, as well as create and delete arbitrary files on the Expedition system. These files include information such as usernames, cleartext passwords, device configurations, and device API keys for firewalls running PAN-OS software.
+Expedition, previously known as the Migration Tool, is a free tool that facilitates migration to the Palo Alto Networks NGFW platform from other firewall vendors and provides a temporary workspace for optimizing Palo Alto Networks security policies. Expedition is designed to only be used temporarily for migration purposes, not to be run in production. You do not need it to operate any Palo Alto Networks products or services. Expedition reached its End of Life (EoL) date on December 31, 2024. Please use the suggested alternatives listed in the Expedition End of Life Announcement (https://live.paloaltonetworks.com/t5/expedition-articles/important-update-end-of-life-announcement-for-palo-alto-networks/ta-p/589642).
+These issues do not otherwise impact firewalls, Panorama appliances, Prisma Access deployments, or Cloud NGFWs.","The following CVEs are fixed in the specified Expedition version and all later versions* of Expedition.
+CVE              EXPEDITION
+CVE-2025-0103    Expedition 1.2.100
+CVE-2025-0104    Expedition 1.2.100
+CVE-2025-0105    Expedition 1.2.101
+CVE-2025-0106    Expedition 1.2.101
+CVE-2025-0107    Expedition 1.2.100
+* Expedition reached its End of Life (EoL) date (https://live.paloaltonetworks.com/t5/expedition-articles/important-update-end-of-life-announcement-for-palo-alto-networks/ta-p/589642) and is no longer supported. We added these fixes prior to the EoL date and we do not plan to make any additional updates or security fixes. Please use the suggested alternatives listed in the Expedition End of Life Announcement (https://live.paloaltonetworks.com/t5/expedition-articles/important-update-end-of-life-announcement-for-palo-alto-networks/ta-p/589642).","Ensure that all network access to Expedition is restricted to only authorized users, hosts, and networks. If you are not actively using Expedition, make sure that your Expedition software is shut down.",https://security.paloaltonetworks.com/PAN-SA-2025-0001
+PAN-SA-2024-0010,CRITICAL,Expedition: Multiple Vulnerabilities in Expedition Lead to Exposure of Firewall Credentials,"Expedition,Cloud NGFW,Panorama,PAN-OS,Prisma Access","Expedition 1
+Cloud NGFW
+Panorama
+PAN-OS
+Prisma Access","< 1.2.96
+None
+None
+None
+None",">= 1.2.96
+All
+All
+All
+All",10/9/2024,2024-11-14T21:30:00.000Z,9.9,9.9,NETWORK,LOW,,NONE,NONE,,product:HIGH subsequent:HIGH,product:HIGH subsequent:NONE,product:HIGH subsequent:NONE,"Multiple vulnerabilities in Palo Alto Networks Expedition allow an attacker to read Expedition database contents and arbitrary files, as well as write arbitrary files to temporary storage locations on the Expedition system. Combined, these include information such as usernames, cleartext passwords, device configurations, and device API keys of PAN-OS firewalls.
+These issues do not affect the firewalls, Panorama, Prisma Access, or Cloud NGFW.","The fixes for all listed issues are available in Expedition 1.2.96, and all later Expedition versions.
+The cleartext file affected by CVE-2024-9466 will be removed automatically during the upgrade.
+All Expedition usernames, passwords, and API keys should be rotated after upgrading to the fixed version of Expedition.
+All firewall usernames, passwords, and API keys processed by Expedition should be rotated after updating.","Ensure networks access to Expedition is restricted to authorized users, hosts, or networks.
+If Expedition is not in active use, ensure that Expedition software is shut down.
+For CVE-2024-9465, you can check for an indicator of compromise with the following command on an Expedition system (replace ""root"" with your username if you are using a different username):
+    mysql -uroot -p -D pandb -e ""SELECT * FROM cronjobs;""
+If you see any records returned, this indicates a potential compromise. Please note that if no records are returned, the system may still be compromised. This is only intended to indicate a potential compromise, rather than confirm a system has not been compromised.
+There are no practical indicators of compromise for the remainder of the CVEs in this advisory.",https://security.paloaltonetworks.com/PAN-SA-2024-0010
