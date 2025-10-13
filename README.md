@@ -44,7 +44,8 @@ CVE records would become more useful to consumers by replacing known affected pr
 
 ### VEX and VDR Differences and VEX Challenges
 
-VEX is frequently brought up during discussions of VDR as an alternative. VEX is not an alternative to VDR, as show in the [side-by-side comparison of VEX and VDR provided by OWASP](https://owasp.org/blog/2023/02/07/vdr-vex-comparison).  A VEX record MUST contain at least one vulnerability ID, however many products have no reported vulnerabilities making it infeasible to use VEX as an alternative for VDR as there is no CVE to report on.
+VEX is frequently brought up during discussions of VDR as an alternative. VEX is not an alternative to VDR, as show in the [side-by-side comparison of VEX and VDR provided by OWASP](https://owasp.org/blog/2023/02/07/vdr-vex-comparison).  A VEX record MUST contain at least one vulnerability ID, however many products have no reported vulnerabilities making it infeasible to use VEX as an alternative for VDR as there is no CVE to report on. Art Manion provides a clear explanation for why a VEX cannot be used as a VDR when there are not vulnerabilities to report for a product: https://github.com/ossf/wg-vulnerability-disclosures/issues/172#issuecomment-3391482701
+
 
 [Ground truth on the extreme difficulties of implementing VEX is provided by Cassie Crossley in this video clip](https://www.youtube.com/watch?v=j9MB7oaq8aI&t=3634s).
 
