@@ -2,7 +2,7 @@
 	"SBOMVulnerabilityDisclosure": {
 		"CVERespository": "NIST_NVD",
 		"NISTNVDSearchStatus": "Success",
-		"UnresolvedVulnerabilities": "U",
+		"UnresolvedVulnerabilities": "N",
 		"PackageSourceLocation": "https://pypi.org/project/sag-reader/1.0.4/#files",
 		"ProductName": "sag-reader",
 		"ProductVersion": "1.0.4",
@@ -81,4 +81,5 @@
 			"NumberVulnsReported": "0"
 		}
 	]
+
 }
