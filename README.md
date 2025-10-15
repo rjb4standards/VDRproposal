@@ -1,6 +1,7 @@
 # VDRproposal
 Vulnerability Disclosure Report (VDR) Proposed Standard https://github.com/ossf/wg-vulnerability-disclosures/issues/172
-[Main Messages for October 15](https://github.com/rjb4standards/VDRproposal/blob/main/VDRproposal-Messages.pdf)
+
+###[Main Messages for October 15](https://github.com/rjb4standards/VDRproposal/blob/main/VDRproposal-Messages.pdf)
 
 ### Problem Statement:
 Frequently, users do not know precisely which products in their ecosystems are affected by a vulnerability/CVE. i.e. Log4J - how does a user know if any of the products running in their production environments are affected by Log4J. 
